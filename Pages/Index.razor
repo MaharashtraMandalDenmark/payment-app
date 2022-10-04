@@ -1,9 +1,44 @@
 ﻿@page "/"
+<PageTitle>MMD Payments</PageTitle>
 
-<PageTitle>Index</PageTitle>
+<h1>Events and activities</h1>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+Click on the row will take you to Payment for that activity!
+@if (activities == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-borderless table-dark table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Activity</th>
+                <th scope="col">Date</th>
+                <th scope="col">Member Fee (Family)</th>        
+                <th scope="col">Member Fee (Adult)</th>
+                <th scope="col">Member Fee (Kid)</th>
+                <th scope="col">Non member Fee (Family)</th>
+                <th scope="col">Non member Fee (Adult)</th>
+                <th scope="col">Non member Fee (Kid)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var activity in activities)
+            {
+                <tr onclick="location.href = '/payment'">
+                    <td>@activity.Activity</td>
+                    <td>@activity.Date</td>
+                    <td>@activity.MemberShipFamily</td>
+                    <td>@activity.MemberShipAdult</td>
+                    <td>@activity.MemberShipKid</td>
+                    <td>@activity.NonMemberShipFamily</td>
+                    <td>@activity.NonMemberShipAdult</td>
+                    <td>@activity.NonMemberShipKid</td>                    
+                </tr>
+            }               
+        </tbody>
+        </table>
+    </div>
+}

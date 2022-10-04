@@ -1,0 +1,52 @@
+[
+    {
+      "activity": "Annual Membership",
+      "date": "2022-01-01",
+      "memberShipFamily": 125,  
+      "memberShipAdult": 125,  
+      "memberShipKid": 50,
+      "nonmemberShipFamily": 200,
+      "nonmemberShipAdult": 200,
+      "nonmemberShipKid": 200
+    },
+    {
+        "activity": "Annual General Meeting",
+        "date": "2022-02-02",
+        "memberShipFamily": 125,  
+        "memberShipAdult": 125,  
+        "memberShipKid": 50,
+        "nonmemberShipFamily": 200,
+        "nonmemberShipAdult": 200,
+        "nonmemberShipKid": 200
+      },
+      {
+        "activity": "Sports Day",
+        "date": "2022-03-03",
+        "memberShipFamily": 125,  
+        "memberShipAdult": 125,  
+        "memberShipKid": 50,
+        "nonmemberShipFamily": 200,
+        "nonmemberShipAdult": 200,
+        "nonmemberShipKid": 200
+      },
+      {
+        "activity": "Ashok Naigoankar (Miskili aani Maja)",
+        "date": "2022-09-09",
+        "memberShipFamily": 125,  
+        "memberShipAdult": 125,  
+        "memberShipKid": 50,
+        "nonmemberShipFamily": 200,
+        "nonmemberShipAdult": 200,
+        "nonmemberShipKid": 200
+      },
+      {
+        "activity": "Diwali & Food fest",
+        "date": "2022-12-12",
+        "memberShipFamily": null,  
+        "memberShipAdult": null,  
+        "memberShipKid": null,
+        "nonmemberShipFamily": null,
+        "nonmemberShipAdult": null,
+        "nonmemberShipKid": null
+      }
+]
